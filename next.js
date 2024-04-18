@@ -4,33 +4,35 @@ module.exports = {
     es2021: true,
     jest: true,
   },
-  extends: [
-    'standard',
-    'plugin:@typescript-eslint/recommended',
-    'plugin:prettier/recommended',
-  ],
+  extends: ['standard', 'plugin:@typescript-eslint/recommended', 'plugin:prettier/recommended'],
   parser: '@typescript-eslint/parser',
   parserOptions: {
     ecmaFeatures: {
-      jsx: true
+      jsx: true,
     },
     ecmaVersion: 'latest',
-    sourceType: 'module'
+    sourceType: 'module',
   },
-  plugins: [
-    'jsx-a11y',
-    '@typescript-eslint'
-  ],
+  plugins: ['jsx-a11y', '@typescript-eslint'],
   rules: {
-    'prettier/prettier': ["error", {
-      'printWidth': 120,
-      'tabWidth': 2,
-      'singleQuote': true,
-      'trailingComma': 'all',
-      'arrowParens': 'always',
-      'semi': false,
-      'endOfLine': 'auto',
-    }],
+    'prettier/prettier': [
+      'error',
+      {
+        printWidth: 120,
+        tabWidth: 2,
+        singleQuote: true,
+        trailingComma: 'all',
+        arrowParens: 'always',
+        semi: false,
+        endOfLine: 'auto',
+
+        quoteProps: 'as-needed',
+        bracketSameLine: false,
+        jsxSingleQuote: false,
+        bracketSpacing: true,
+        useTabs: false,
+      },
+    ],
     'jsx-a11y/alt-text': [
       'warn',
       {
@@ -51,5 +53,5 @@ module.exports = {
     'import/parsers': {
       [require.resolve('@typescript-eslint/parser')]: ['.ts', '.tsx', '.d.ts'],
     },
-  }
+  },
 }

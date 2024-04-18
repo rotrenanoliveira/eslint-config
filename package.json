@@ -1,12 +1,15 @@
 {
   "name": "@rotrenanoliveira/eslint-config",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": false,
   "description": "ESLint configuration",
   "main": "index.js",
   "license": "MIT",
   "repository": {
     "url": "rotrenanoliveira/eslint-config"
+  },
+  "eslintConfig": {
+    "extends": "./node.js"
   },
   "peerDependencies": {
     "eslint": "^8.0.0",
@@ -18,18 +21,20 @@
     }
   },
   "dependencies": {
-    "@typescript-eslint/eslint-plugin": "^5.25.0",
-    "@typescript-eslint/parser": "^5.25.0",
-    "eslint": "^8.0.0",
-    "eslint-config-prettier": "^8.5.0",
-    "eslint-config-standard": "^17.0.0",
-    "eslint-plugin-import": "^2.26.0",
-    "eslint-plugin-jsx-a11y": "^6.5.1",
-    "eslint-plugin-n": "^15.2.0",
-    "eslint-plugin-promise": "^6.0.0",
-    "eslint-plugin-react": "^7.30.0",
-    "eslint-plugin-react-hooks": "^4.5.0",
-    "prettier": "^3.0.0",
-    "eslint-plugin-prettier": "5.0.1"
-  }
+    "@typescript-eslint/eslint-plugin": "^5.62.0",
+    "@typescript-eslint/parser": "^5.62.0",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^8.10.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-jsx-a11y": "^6.8.0",
+    "eslint-plugin-n": "^15.7.0",
+    "eslint-plugin-prettier": "5.0.1",
+    "eslint-plugin-promise": "^6.1.1",
+    "eslint-plugin-react": "^7.34.1",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-simple-import-sort": "12.1.0",
+    "prettier": "^3.2.5"
+  },
+  "packageManager": "pnpm@9.0.1+sha256.46d50ee2afecb42b185ebbd662dc7bdd52ef5be56bf035bb615cab81a75345df"
 }
