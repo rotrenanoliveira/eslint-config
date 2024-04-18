@@ -20,6 +20,15 @@ module.exports = {
         trailingComma: 'all',
         arrowParens: 'always',
         semi: false,
+
+        useTabs: false,
+
+        quoteProps: 'as-needed',
+        jsxSingleQuote: false,
+
+        endOfLine: 'auto',
+        bracketSpacing: true,
+        bracketSameLine: false,
       },
     ],
   },
